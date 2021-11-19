@@ -8,6 +8,7 @@ import FirstDashboard from '../views/starter/starter.jsx';
 import Alerts from '../views/ui-components/alert.jsx';
 import Badges from '../views/ui-components/badge.jsx';
 import Buttons from '../views/ui-components/button.jsx';
+import HomeContainer from '../views/ui-components/HomeContainer.jsx';
 import Cards from '../views/ui-components/cards.jsx';
 import LayoutComponent from '../views/ui-components/layout.jsx';
 import PaginationComponent from '../views/ui-components/pagination.jsx';
@@ -15,6 +16,12 @@ import PopoverComponent from '../views/ui-components/popover.jsx';
 import TooltipComponent from '../views/ui-components/tooltip.jsx';
 
 var ThemeRoutes = [
+  {
+    path: '/upCommerce/Inicio',
+    name: 'Inicio',
+    icon: 'mdi mdi-credit-card-multiple',
+    component: HomeContainer
+  },
   {
     path: '/starter/starter',
     name: 'Dashboard',
@@ -38,12 +45,6 @@ var ThemeRoutes = [
     name: 'Buttons',
     icon: 'mdi mdi-toggle-switch',
     component: Buttons
-  },
-  {
-    path: '/ui-components/card',
-    name: 'Cards',
-    icon: 'mdi mdi-credit-card-multiple',
-    component: Cards
   },
   {
     path: '/ui-components/layout',

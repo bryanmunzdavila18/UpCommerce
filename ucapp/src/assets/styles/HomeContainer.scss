@@ -1,0 +1,14 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  .banner-image {
+    height: 40rem;
+    .card {
+      height: 100%;
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
